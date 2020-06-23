@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.css">
+</head>
+<body class="bg-light">
+    <div class="container vh-100 d-flex align-items-center">
+        <div class="row">
+            <div class="col-3">
+                <img src="assets/image/Group 7.png" class="w-100" alt="">
+            </div>
+            <div class="col-6">
+                <p>水煎包師傅：請問你的生日是幾月呢</p>
+                <p class="text-right">阿伯：我 <input id='customerBirthMonthId' min="1" max="12" type="number"> 月生日</p>
+                <p>水煎包師傅：因為現在是 <em class="font-weight-bold text-primary" id="nowMonthId"></em> 月，所以 <em class="font-weight-bold text-primary" id='responseBirthdayVipId'></em></p>
+                <br>
+                <p class="text-right">阿伯：那我要 <input type="number" min="0" id="baoNumId" name="煎包數量"> 個煎包</p>
+                <p class="text-right">阿伯：還要 <input type="number" min="0" id="teaNumId" name="紅茶數量"> 杯紅茶</p>
+                <input id="countId" type="button" value="計算一下"><br><br>
+                <p>水煎包師傅：總計 <em class="font-weight-bold text-primary" id="totalId"></em> 元</p>
+            </div>
+            <div class="col-3">
+                <img src="assets/image/Group 8.png" class="w-100 reverseScaleX" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="listen.js"></script>
+</body>
+</html>
